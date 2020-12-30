@@ -147,6 +147,9 @@ class TasksFragment : Fragment() {
         }
     }
 
+    /**
+     * 添加新任务
+     */
     private fun navigateToAddNewTask() {
         val action = TasksFragmentDirections
             .actionTasksFragmentToAddEditTaskFragment(
@@ -156,6 +159,9 @@ class TasksFragment : Fragment() {
         findNavController().navigate(action)
     }
 
+    /**
+     * 打开任务详情
+     */
     private fun openTaskDetails(taskId: String) {
         val action = TasksFragmentDirections.actionTasksFragmentToTaskDetailFragment(taskId)
         findNavController().navigate(action)
