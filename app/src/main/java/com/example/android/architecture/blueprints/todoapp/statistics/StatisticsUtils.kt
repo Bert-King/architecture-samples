@@ -20,10 +20,12 @@ import com.example.android.architecture.blueprints.todoapp.data.Task
 
 /**
  * Function that does some trivial computation. Used to showcase unit tests.
+ * trivial 微不足道的，不重要的
  */
 internal fun getActiveAndCompletedStats(tasks: List<Task>?): StatsResult {
+    tasks.isNullOrEmpty()
 
-    return if (tasks == null || tasks.isEmpty()) {
+    return if (tasks.isNullOrEmpty()) {
         StatsResult(0f, 0f)
     } else {
         val totalTasks = tasks.size

@@ -34,6 +34,7 @@ import com.google.android.material.snackbar.Snackbar
 
 /**
  * Main UI for the add task screen. Users can enter a task title and description.
+ * 添加or编辑任务的界面
  */
 class AddEditTaskFragment : Fragment() {
 

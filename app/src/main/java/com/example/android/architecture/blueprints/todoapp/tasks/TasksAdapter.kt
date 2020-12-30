@@ -40,6 +40,9 @@ class TasksAdapter(private val viewModel: TasksViewModel) :
         return ViewHolder.from(parent)
     }
 
+    /**
+     * ViewHolder
+     */
     class ViewHolder private constructor(val binding: TaskItemBinding) :
         RecyclerView.ViewHolder(binding.root) {
 

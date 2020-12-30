@@ -37,6 +37,7 @@ import com.google.android.material.snackbar.Snackbar
 
 /**
  * Main UI for the task detail screen.
+ * 任务详情页面
  */
 class TaskDetailFragment : Fragment() {
     private lateinit var viewDataBinding: TaskdetailFragBinding

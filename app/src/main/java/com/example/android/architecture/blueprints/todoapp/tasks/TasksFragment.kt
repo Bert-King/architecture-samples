@@ -64,6 +64,10 @@ class TasksFragment : Fragment() {
         return viewDataBinding.root
     }
 
+
+    /**
+     * 菜单点击事件
+     */
     override fun onOptionsItemSelected(item: MenuItem) =
         when (item.itemId) {
             R.id.menu_clear -> {
@@ -81,6 +85,9 @@ class TasksFragment : Fragment() {
             else -> false
         }
 
+    /**
+     * 创建菜单
+     */
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.tasks_fragment_menu, menu)
     }
@@ -154,6 +161,9 @@ class TasksFragment : Fragment() {
         findNavController().navigate(action)
     }
 
+    /**
+     * 初始化Adapter
+     */
     private fun setupListAdapter() {
         val viewModel = viewDataBinding.viewmodel
         if (viewModel != null) {

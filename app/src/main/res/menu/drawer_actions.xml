@@ -24,4 +24,8 @@
         android:id="@id/statistics_fragment_dest"
         android:icon="@drawable/ic_statistics"
         android:title="@string/statistics_title" />
+    <item android:id="@+id/version"
+        android:icon="@mipmap/ic_launcher"
+        android:title="版本说明"
+        />
 </menu>

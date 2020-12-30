@@ -22,6 +22,7 @@ import com.example.android.architecture.blueprints.todoapp.data.Task
 
 /**
  * Interface to the data layer.
+ * 数据层的接口
  */
 interface TasksRepository {
 
