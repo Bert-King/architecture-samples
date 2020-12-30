@@ -75,6 +75,14 @@
                     android:textAppearance="?android:attr/textAppearanceMedium"
                     android:visibility="@{viewmodel.empty ? View.GONE : View.VISIBLE}" />
 
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/pieChart"
+                    android:layout_width="400dp"
+                    android:layout_height="400dp"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="20dp"
+                    />
+
             </LinearLayout>
         </LinearLayout>
 

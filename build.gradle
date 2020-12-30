@@ -3,6 +3,7 @@ buildscript {
     ext.navigationVersion = '2.2.0-rc02'
     ext.ktlintVersion = '0.33.0'
     repositories {
+        maven { url 'https://jitpack.io' }
         google()
         jcenter()
     }
@@ -22,6 +23,7 @@ plugins {
 
 allprojects {
     repositories {
+        maven { url 'https://jitpack.io' }
         google()
         jcenter()
     }

@@ -109,6 +109,8 @@ dependencies {
     implementation "androidx.test.espresso:espresso-idling-resource:$espressoVersion"
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
+    implementation "com.github.PhilJay:MPAndroidChart:$mpAndroidChartVersion"
+
 
     // Architecture Components
     implementation "androidx.room:room-runtime:$roomVersion"
