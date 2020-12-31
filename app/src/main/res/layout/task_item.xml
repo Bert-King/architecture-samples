@@ -14,16 +14,18 @@
   ~ limitations under the License.
   -->
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    >
 
     <data>
 
         <import type="android.widget.CompoundButton" />
-
+        <!--引入 变量-->
         <variable
             name="task"
             type="com.example.android.architecture.blueprints.todoapp.data.Task" />
-
+        <!--引入 ViewModel-->
         <variable
             name="viewmodel"
             type="com.example.android.architecture.blueprints.todoapp.tasks.TasksViewModel" />
@@ -56,6 +58,8 @@
             android:layout_marginStart="@dimen/activity_horizontal_margin"
             android:textAppearance="@style/TextAppearance.AppCompat.Title"
             android:text="@{task.titleForList}"
+            tools:text="任务名称"
+            android:gravity="center"
             app:completedTask="@{task.completed}" />
     </LinearLayout>
 </layout>

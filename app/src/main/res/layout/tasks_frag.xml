@@ -17,9 +17,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
-
+        <!-- 引入View是为了使用View.GONE : View.VISIBLE-->
         <import type="android.view.View" />
-
+        <!--引入ContextCompat 是为了使用ContextCompat:这里主要是：ContextCompat.getDrawable()-->
         <import type="androidx.core.content.ContextCompat" />
 
         <variable
